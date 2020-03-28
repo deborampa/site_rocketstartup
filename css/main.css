@@ -13,7 +13,7 @@ nav {
 .gshow-nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 72px;
 }
@@ -24,15 +24,17 @@ nav {
 
 .title p {
     font-family: "Work Sans", Arial, Helvetica, sans-serif; 
-    font-size: 2rem; 
+    font-size: 1.9rem; 
     color: white;
-    width: 100%;
-    margin: 0px;
-    flex-grow: 1;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 40px;
+    /* flex-grow: 1; */
 }
 
 .distribution {
-    width: 100px;
+    width: 200px;
     height: auto;
 }
 
@@ -132,7 +134,7 @@ p {
     text-decoration: none;
 }
 
-.container-como-funciona {
+.como-funciona {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -141,20 +143,27 @@ p {
 
 .como-funciona-texto {
     padding: 10px 50px 5px 0px;
-    width: 650px;
+    width: 50%;
+    display: inline-block;
 }
 
 .como-funciona-imagem {
     padding: 10px 0px 5px 0px;
-    width: 400px;
+    width: 40%;
     
+}
+
+.flex-imagens {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .img-1 {
     margin-top: 20px;
-    position: relative;
-    float: left;
-    width: 40%;
+    /* position: relative; */
+    /* float: left; */
+    width: 45%;
 }
 
 .img-1 p {
@@ -165,10 +174,11 @@ p {
 
 .img-2 {
     margin-top: 20px;
-    position: relative;
-    float: right;
-    width: 40%;
-    right: 200px;
+    /* position: relative;
+    float: right; */
+    margin-left: 10px;
+    width: 45%;
+    /* right: 200px; */
 }
 
 .fases {
@@ -281,12 +291,13 @@ p {
     justify-content: center;
     height: 50px;
     width: max-content;
-    background-color: #00D5C2;
+    background-color: #fff;
     color: rgb(121, 118, 141);
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     text-align: center;
     padding: 5px 15px;
+    margin-top: 50px;
 }
 
 .inscrev p {
@@ -324,12 +335,11 @@ p {
     line-height: 1.6rem;
 }
 
-.rodape {
+.rodape-bg {
     background-color: #2A3B49;
-    max-width: 100%;
-    height: 127px;
-    margin-top: 150px;
-
+    width: 100%;
+    height: max-content;
+    padding-bottom: 40px;
 }
 
 .rodape-flex {
@@ -337,51 +347,37 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
 
+.linha-1 {
+    width: 30%;
+    margin: 0;
+}
+
+.linha-2 {
+    /* width: 50%; */
+    flex-grow: 2;
+    margin: 0;
 }
 
 .linha-1 img {
     width: 100px;
+    margin: 0;
 }
 
 .linha-1 p {
     color:#0EE0CD;
+    margin: 0;
 }
 
 .linha-2 p {
     color: white;
     text-align: right;
+    margin: 0;
 }
-
-.footer-links {
-    text-align: right;
-    display: inline-flex;
-    list-style: none;
-    color: white;
-}
-
-.footer-links ul li a {
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-    
-}
-
-.footer-links ul li a:hover a:visited {
-    color: white;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -448,25 +444,26 @@ p {
     }
     
     h2 {
-        width: 60%;
+        width: 70%;
         font-family: 'Dosis', Arial, Helvetica, sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
+        line-height: 1.9rem;
         font-weight: 700;
         color: #2541B2;
-        margin: 40px 0px 20px 0px;
+        margin: 40px 0px 10px 0px;
     }
     
     h3 {
         font-family: 'Dosis', Arial, Helvetica, sans-serif;
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         font-weight: 700;
         color: #5F51D2;
-        margin: 20px 0px 10px 0px;
+        margin: 20px 0px 0px 0px;
     }
     
     h4 {
         font-family: 'Dosis', Arial, Helvetica, sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 400;
         color: #5F51D2;
         margin-bottom: 30px;
@@ -488,16 +485,15 @@ p {
         background-repeat: no-repeat;
         width: 100%;
         height: max-content;
-        margin-top: 72px;
-        padding-bottom: 20px;
+        margin-top: 60px;
+        padding-bottom: 10px;
     }
     
     .banner-infos {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
-        height: 100vh;
         justify-content: center;
-        flex-wrap: wrap;
+        align-content: center; */
     }
     
     .banner-infos p {
@@ -505,28 +501,32 @@ p {
     }
     
     .logo-rocket {
-        width: 300px;
-        height: auto;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .logo-rocket img {
-        width: 300px;
-        height: auto;
         margin: 0 auto;
         padding: 0;
+        width: 250px;
     }
     
     .banner-titulo {
-        width: 400px;
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+    }
+
+    .banner-titulo h2 {
+        margin-top: 70px;
+        font-size: 1.9rem;
+        line-height: 2.1rem;
+        margin-bottom: 20px;
     }
     
     .banner-titulo p {
-        width: 200px;
+        width: 80%;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
     }
 
     .btn-principal {
+        margin-top: 30px;
         background-color: #0EE0CD;
         width: 250px;
         border-radius: 30px;
@@ -545,46 +545,73 @@ p {
     .btn-principal:hover {
         text-decoration: none;
         background-color: #FFF;
-        text-decoration: none;
     }
     
-    .container-como-funciona {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .como-funciona {
+        width: 100%;
+        /* display: flex; */
+        flex-direction: column;
+        /* flex-wrap: nowrap; */
         align-items: center;
+        justify-content: center;
     }
     
     .como-funciona-texto {
-        padding: 10px 50px 5px 0px;
-        width: 650px;
+        padding: 0px;
+        /* padding: 10px 50px 5px 0px; */
+        width: 90%;
     }
     
-    .como-funciona-imagem {
-        padding: 10px 0px 5px 0px;
-        width: 400px;
-        
+    .como-funciona-texto p {
+        /* width: 80%; */
+        font-size: 1.1rem;
     }
-    
+
+    .como-funciona-imagem  {
+        width: 100%;
+        padding: 0px;
+        display: none;
+    }
+
+    .como-funciona-imagem a {
+        width: 100%;
+        padding: 0px;
+        display: none;
+    }
+
+    /* .flex-images {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 0px;
+        margin: 0px;
+    }
+     */
     .img-1 {
-        margin-top: 20px;
-        position: relative;
-        float: left;
-        width: 40%;
+        /* margin-top: 20px;
+        align-self: center; */
+        /* position: relative; */
+        /* float: left; */
+        width: 100%;
     }
     
     .img-1 p {
         padding-top: 0.5rem;
         font-size: 0.8rem;
         line-height: 1.2rem;
+        width: 70%;
+        margin: 0 auto;
     }
     
     .img-2 {
-        margin-top: 20px;
-        position: relative;
-        float: right;
-        width: 40%;
-        right: 200px;
+        display: none;
+        /* margin-top: 20px; */
+        /* position: relative;
+        float: right; */
+        /* width: 80%; */
+        /* right: 200px; */
     }
     
     .fases {
@@ -676,19 +703,26 @@ p {
         background-image: url('../img/banners/rocket2.png');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 80vh;
+        height: max-content;
     }   
     
+    .novas-orbitas h2 {
+        color: #fff;
+        line-height: 1.7rem;
+        margin-bottom: 25px;
+    }
+
     .novas-orbitas li {
         font-family: "Dosis", Arial, Helvetica, sans-serif;
-        font-size: 1.5rem;
-        line-height: 2.3rem;
-        color: #FFF;
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+        color: #2541B2;
         font-weight: 700;
+        margin-bottom: 15px;
     }
     
     .fa-li {
-        color: #00D5C2;
+        color: #fff;
     }
     
     .inscrev {
@@ -703,6 +737,7 @@ p {
         border-radius: 20px;
         text-align: center;
         padding: 5px 15px;
+        margin-bottom: 50px;
     }
     
     .inscrev p {
@@ -710,7 +745,7 @@ p {
         text-align: center;
     }
     
-    .inscrev a:link a:hover a:visited a:active {
+    .inscrev a:link, a:hover, a:visited, a:active {
         cursor: pointer;
         text-decoration: none;
         color: #fff;
@@ -726,67 +761,79 @@ p {
         justify-content: space-between;
     }
     
+    .nossos-stars h2 {
+        font-family: 5rem;
+    }
+
     .star-foto {
-        max-width: 200px;
+        max-width: 120px;
+        margin-top: 20px;
     }
     
     .star {
-        width: 30%;
+        width: 100%;
         margin-right: 50px;
     }
-    
+
+    .star h3 {
+        font-size: 1.6rem;
+    }
+
+    .star h4 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
     .star p {
         letter-spacing: -1px;
         line-height: 1.6rem;
     }
-    
-    .rodape {
+
+    .rodape-bg {
         background-color: #2A3B49;
-        max-width: 100%;
-        height: 127px;
-        margin-top: 150px;
-    
+        width: 100%;
+        height: max-content;
+        padding-bottom: 40px;
     }
-    
+
     .rodape-flex {
         padding-top: 20px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-    
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
     }
-    
+
+    .linha-1 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .linha-2 {
+        flex-grow: 2;
+        margin: 0;
+        text-align: center;
+    }
+
     .linha-1 img {
         width: 100px;
+        margin-bottom: 15px;
     }
-    
+
     .linha-1 p {
+        display: none;
         color:#0EE0CD;
+        margin: 0;
+        text-align: center;
     }
-    
+
     .linha-2 p {
         color: white;
-        text-align: right;
+        text-align: center;
+        margin: 0;
+        font-size: .9rem;
+        line-height: 1.2rem;
     }
-    
-    .footer-links {
-        text-align: right;
-        display: inline-flex;
-        list-style: none;
-        color: white;
-    }
-    
-    .footer-links ul li a {
-        color: white;
-        cursor: pointer;
-        text-decoration: none;
-        
-    }
-    
-    .footer-links ul li a:hover a:visited {
-        color: white;
-    }
-    
 }
-  
